@@ -5,7 +5,7 @@ import "./styles.css";
 export default function App() {
   return (
     <div className="wrapper">
-      <h1>Todos</h1>
+      <h1>To Do List</h1>
       <TodoList />
     </div>
   );
