@@ -1,0 +1,102 @@
+/* Add styles in this file. */
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f2d99e;
+  color: #1c3fc9;
+}
+
+h1 {
+  font-size: 4.5em;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  padding: 1em;
+}
+
+.list {
+  border: 1px solid transparent;
+  list-style: none;
+  margin-top: 2em;
+}
+
+.list h2 {
+  border-bottom: 4.5px solid #1c3fc9;
+  font-size: 1.5em;
+  font-weight: 900;
+  font-style: italic;
+  padding-bottom: 4px;
+  border-radius: 2px;
+}
+
+.buttonWrapper {
+  text-align: right;
+}
+.list button {
+  position: right;
+  border: 3px solid #1c3fc9;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.3em 1em;
+  margin: 0 0 30px 20px;
+  border-radius: 2px;
+}
+
+.appendToDo {
+  border: 1px solid transparent;
+  width: 70%;
+  margin: 5em auto;
+}
+
+.input {
+  border: 1px solid transparent;
+}
+
+.appendToDo input {
+  border-bottom: 4px solid #1c3fc9;
+  background-color: transparent;
+  width: 70%;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: italic;
+  padding: 10px 20px;
+  margin-right: 5%;
+}
+
+.appendToDo button {
+  width: 25%;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.3em 1em;
+  border: 3px solid #1c3fc9;
+  border-radius: 2px;
+}
+
+.progress-bar {
+  box-sizing: border-box;
+  height: 20px;
+  width: 100%;
+  background-color: #1c3fc9;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.progress-bar .bar {
+  background: linear-gradient(to right, #f2d99e, #8c9ddf);
+  height: 100%;
+  border-radius: 2px;
+}
