@@ -29,7 +29,7 @@ h1 {
 }
 
 .list {
-  border: 1px solid red;
+  border: 1px solid transparent;
   list-style: none;
   margin-top: 2em;
 }
@@ -45,7 +45,7 @@ h1 {
 
 .buttonWrapper {
   text-align: right;
-  border: 1px solid green;
+  border: 1px solid transparent;
 }
 .list button {
   position: right;
@@ -59,7 +59,7 @@ h1 {
 }
 
 .appendToDo {
-  border: 1px solid orange;
+  border: 1px solid transparent;
   width: 80%;
   margin: 50px auto;
 }
