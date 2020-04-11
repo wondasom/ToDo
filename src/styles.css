@@ -5,35 +5,38 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #f2d99e;
+
   color: #1c3fc9;
+}
+body{
+  background: rgb(245,223,172);
+  background: radial-gradient(circle, rgba(245,223,172,1) 12%, rgba(255,223,148,0.9864320728291317) 97%);
 }
 
 h1 {
-  font-size: 4.5em;
+  font-size: 50px;
   font-weight: 900;
   font-style: italic;
   text-align: center;
   margin: 0.5em 0;
-  
 }
 
 .wrapper {
-  width: 600px;
+  width: 760px;
   margin: 0 auto;
   border: 1px solid transparent;
-  padding: 1em;
+  padding: 10px;
 }
 
 .list {
-  border: 1px solid transparent;
+  border: 1px solid red;
   list-style: none;
   margin-top: 2em;
 }
 
 .list h2 {
   border-bottom: 4.5px solid #1c3fc9;
-  font-size: 1.5em;
+  font-size: 26px;
   font-weight: 900;
   font-style: italic;
   padding-bottom: 4px;
@@ -42,22 +45,23 @@ h1 {
 
 .buttonWrapper {
   text-align: right;
+  border: 1px solid green;
 }
 .list button {
   position: right;
   border: 3px solid #1c3fc9;
-  font-size: 1.1em;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 0.3em 1em;
+  padding: 6px 20px;
   margin: 0 0 30px 20px;
   border-radius: 2px;
 }
 
 .appendToDo {
-  border: 1px solid transparent;
-  width: 70%;
-  margin: 5em auto;
+  border: 1px solid orange;
+  width: 80%;
+  margin: 50px auto;
 }
 
 .input {
@@ -68,7 +72,7 @@ h1 {
   border-bottom: 4px solid #1c3fc9;
   background-color: transparent;
   width: 70%;
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: 700;
   font-style: italic;
   padding: 10px 20px;
@@ -77,11 +81,11 @@ h1 {
 
 .appendToDo button {
   width: 25%;
-  font-size: 1.1em;
+  font-size: 18px;
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 0.3em 1em;
+  padding: 6px 20px;
   border: 3px solid #1c3fc9;
   border-radius: 2px;
 }
@@ -102,3 +106,16 @@ h1 {
   height: 100%;
   border-radius: 2px;
 }
+
+@media (max-width: 750px) {
+  .wrapper{
+    width: 400px;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 20px;
+  }
+}
+
