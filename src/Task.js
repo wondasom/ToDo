@@ -1,6 +1,6 @@
 import React from "react";
 
-const Todo = ({ text, isDone, onToggleClick, onRemoveClick }) => {
+const Task = ({ text, isDone, onToggleClick, onRemoveClick }) => {
   return (
     <li className="list">
       <h2>
@@ -15,4 +15,4 @@ const Todo = ({ text, isDone, onToggleClick, onRemoveClick }) => {
   );
 };
 
-export default Todo;
+export default Task;

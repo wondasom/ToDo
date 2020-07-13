@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import _ from "lodash";
-import Todo from "./Todo";
-import todoData from "./todoData";
+import Task from "./Task";
+import taskData from "./taskData";
 import ProgressBar from "./ProgressBar";
 
-const TodoList = () => {
-	const [todos, setTodos] = useState(todoData);
+const ToDoList = () => {
+	const [todos, setTodos] = useState(taskData);
 	const [newTodoText, setNewTodoText] = useState("");
 
 	const toggleTodo = (text) => {
@@ -67,7 +67,7 @@ const TodoList = () => {
 			<ProgressBar percentage={getPercentage()} />
 			<ul>
 				{todos.map((todo) => (
-					<Todo
+					<Task
 						key={todo.text}
 						text={todo.text}
 						isDone={todo.isDone}
@@ -92,4 +92,4 @@ const TodoList = () => {
 	);
 };
 
-export default TodoList;
+export default ToDoList;
