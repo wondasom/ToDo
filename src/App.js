@@ -1,12 +1,12 @@
 import React from "react";
-import ToDoList from "./ToDoList";
+import TodoList from "./TodoList"
 import "./styles.css";
 
 export default function App() {
 	return (
 		<div className='wrapper'>
 			<h1>To Do List</h1>
-			<ToDoList />
+			<TodoList />
 		</div>
 	);
 }

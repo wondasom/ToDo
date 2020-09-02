@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import _ from "lodash";
-import Task from "./Task";
-import taskData from "./taskData";
-import ProgressBar from "./ProgressBar";
+import React, { useState } from 'react';
+import _ from 'lodash';
+import Task from './Task';
+import taskData from './taskData';
+import ProgressBar from './ProgressBar';
 
-const ToDoList = () => {
+const TodoList = () => {
 	const [todos, setTodos] = useState(taskData);
-	const [newTodoText, setNewTodoText] = useState("");
+	const [newTodoText, setNewTodoText] = useState('');
 
 	const toggleTodo = (text) => {
 		const newTodos = _.cloneDeep(todos);
@@ -25,7 +25,7 @@ const ToDoList = () => {
 		// We return, if the text is empty, or
 		// if there's a todo with this text already.
 		if (!newTodoText || _.find(todos, { text: newTodoText })) {
-			setNewTodoText("");
+			setNewTodoText('');
 			return;
 		}
 
@@ -38,11 +38,11 @@ const ToDoList = () => {
 		];
 
 		setTodos(newTodos);
-		setNewTodoText("");
+		setNewTodoText('');
 	};
 
 	const handleEnter = (event) => {
-		if (event.key === "Enter") {
+		if (event.key === 'Enter') {
 			addTodo();
 		}
 	};
@@ -92,4 +92,4 @@ const ToDoList = () => {
 	);
 };
 
-export default ToDoList;
+export default TodoList;
